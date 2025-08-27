@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subvención para Nuevos Autónomos en Andalucía</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+        }
+        #contact-modal {
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <article class="bg-white p-6 sm:p-10 rounded-lg shadow-md">
+            <header class="mb-8 border-b pb-6">
+                <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">Nueva Subvención para Autónomos en Andalucía: Hasta 5.500€ por Inicio de Actividad</h1>
+                <p class="mt-3 text-lg text-gray-600">Si te has dado de alta como autónomo recientemente, esta es tu oportunidad. Te explicamos todos los detalles de la nueva Línea 2 de ayudas.</p>
+            </header>
+            
+            <div class="prose max-w-none text-gray-700 space-y-8">
+                
+                <div>
+                    <h2 class="font-semibold text-2xl text-gray-800">¿En qué consiste esta ayuda?</h2>
+                    <p>La Junta de Andalucía ha lanzado un nuevo programa de subvenciones para fomentar el trabajo autónomo. La **Línea 2: Inicio de Actividad** está diseñada para dar un impulso económico a quienes acaban de empezar su andadura como trabajadores por cuenta propia, ayudando a cubrir los gastos iniciales.</p>
+                </div>
+
+                <div>
+                    <h2 class="font-semibold text-2xl text-gray-800">¿Cuánto dinero puedes recibir?</h2>
+                    <p>La cuantía de la subvención varía según tu edad, género y la ubicación de tu negocio. ¡Puede llegar hasta los 5.500€!</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                        <div class="bg-blue-50 border border-blue-200 p-4 rounded-lg">
+                            <p class="font-bold text-blue-800 text-2xl">5.000 €</p>
+                            <ul class="list-disc pl-5 mt-2 text-sm text-blue-700">
+                                <li>Mujeres menores de 35 años.</li>
+                                <li>Hombres menores de 30 años.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-green-50 border border-green-200 p-4 rounded-lg">
+                            <p class="font-bold text-green-800 text-2xl">3.800 €</p>
+                            <ul class="list-disc pl-5 mt-2 text-sm text-green-700">
+                                <li>Mujeres de 35 años o más.</li>
+                                <li>Hombres de 30 años o más.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-4 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+                        <p class="font-semibold text-yellow-800">¡Bonus por ubicación!</p>
+                        <p class="text-sm text-yellow-700">Si tu actividad se desarrolla en un municipio de menos de 10.000 habitantes, la ayuda aumenta a **5.500€** en el primer caso y a **5.000€** en el segundo.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="font-semibold text-2xl text-gray-800">Requisitos Clave: ¿Puedes solicitarla?</h2>
+                    <p>Para poder beneficiarte de esta subvención, debes cumplir las siguientes condiciones:</p>
+                    <ul class="list-disc pl-5 space-y-2 mt-4">
+                        <li>Tu fecha de alta en el RETA (Régimen de Autónomos) debe ser del **30 de septiembre de 2024 en adelante**.</li>
+                        <li>Debes ser beneficiario de la **Cuota Reducida** (la conocida como "tarifa plana").</li>
+                        <li>Tu actividad profesional debe desarrollarse en **Andalucía**.</li>
+                        <li>Te comprometes a mantener el alta como autónomo durante **12 meses ininterrumpidos** después de la solicitud.</li>
+                        <li>No puedes trabajar por cuenta ajena (en nómina) más de un 25% de esos 12 meses (es decir, un máximo de 3 meses).</li>
+                        <li>Debes presentar un **plan de viabilidad** de tu negocio.</li>
+                        <li class="font-semibold text-red-600">Importante: Autónomos societarios y colaboradores no pueden solicitar esta ayuda.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="font-semibold text-2xl text-gray-800">Plazos que debes conocer</h2>
+                    <p>El plazo general para solicitar la ayuda va del **12 de agosto de 2025 al 30 de junio de 2026**.</p>
+                    <p class="font-semibold mt-2">¡Ojo! Tienes un plazo de **2 meses desde tu fecha de alta** en el RETA para presentar la solicitud. Si te diste de alta antes del 12 de agosto de 2025, tus 2 meses empiezan a contar desde esa fecha.</p>
+                </div>
+                
+                <div class="pt-6 border-t">
+                    <h2 class="font-semibold text-2xl text-gray-800">¿Necesitas ayuda para gestionarla?</h2>
+                    <p>Sabemos que los trámites pueden ser complicados. Nos encargamos de revisar tu caso, preparar tu plan de viabilidad y presentar la solicitud por ti para que no tengas que preocuparte por nada.</p>
+                    <button id="open-modal-btn" class="block text-center w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-lg transition-colors duration-200 text-lg">
+                        Contacta con nosotros y te ayudamos
+                    </button>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer class="bg-white mt-12 py-6 border-t">
+        <div class="max-w-7xl mx-auto text-center text-gray-500">
+            <p>&copy; 2025 Tu Asesoría. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Formulario de Contacto -->
+    <div id="contact-modal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-md relative">
+            <div id="form-content">
+                <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+                <div class="p-6 sm:p-8">
+                    <div class="text-center">
+                        <h2 class="text-2xl font-bold text-gray-900">Solicita Ayuda con tu Subvención</h2>
+                        <p class="mt-2 text-sm text-gray-600">Rellena tus datos y nos pondremos en contacto contigo.</p>
+                    </div>
+                    
+                    <form id="contact-form" class="mt-8 space-y-6" action="https://formsubmit.co/graugtelefonos@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Nuevo Contacto - Subvención Autónomos">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="rounded-md shadow-sm -space-y-px">
+                            <div>
+                                <label for="full-name" class="sr-only">Nombre completo</label>
+                                <input id="full-name" name="nombre_completo" type="text" required class="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Nombre completo">
+                            </div>
+                            <div>
+                                <label for="email-address" class="sr-only">Correo electrónico</label>
+                                <input id="email-address" name="correo_electronico" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Correo electrónico">
+                            </div>
+                            <div>
+                                <label for="phone" class="sr-only">Teléfono</label>
+                                <input id="phone" name="telefono" type="tel" required class="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Teléfono">
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                Enviar mis datos
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const openModalButton = document.getElementById('open-modal-btn');
+            const closeModalButton = document.getElementById('close-modal-btn');
+            const contactModal = document.getElementById('contact-modal');
+            const contactForm = document.getElementById('contact-form');
+
+            function showModal() {
+                contactModal.classList.remove('hidden');
+            }
+
+            function hideModal() {
+                contactModal.classList.add('hidden');
+            }
+
+            openModalButton.addEventListener('click', showModal);
+            closeModalButton.addEventListener('click', hideModal);
+
+            contactModal.addEventListener('click', (event) => {
+                if (event.target === contactModal) {
+                    hideModal();
+                }
+            });
+
+            // Opcional: Mostrar un mensaje de éxito sin recargar la página (requiere JS más avanzado)
+            // Por ahora, FormSubmit se encargará de mostrar una página de agradecimiento.
+        });
+    </script>
+
+</body>
+</html>
